@@ -13,9 +13,8 @@ url += "&GLOBAL-ID=EBAY-US"
 url += "&RESPONSE-DATA-FORMAT=JSON"
 url += "&REST-PAYLOAD"
 url += "&keywords="
-#allow for search input
-#search = raw_input("What product are you looking for? ")
-search = "zune 32gb"
+#allow for user to search
+search = raw_input("What product are you looking for? ")
 url += search.replace(" ","%20")
 url += "&paginationInput.entriesPerPage=10"
 
